@@ -1,0 +1,106 @@
+// обнуляющие стили
+@import "_nullstyle";
+
+// Шрифт Roboto + Roboto Condensed ==============
+// @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+// $font-stack: "Ubuntu", sans-serif;
+
+// @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+// $font-stack: "Ubuntu", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+$font-stack: "Satisfy", cursive;
+
+// @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+// $font-stack: "Rampart One", cursive;
+/*  MIXINS
+========================================= */
+
+@mixin animation($animation) {
+  -webkit-animation: #{$animation};
+  -moz-animation: #{$animation};
+  -o-animation: #{$animation};
+  animation: #{$animation};
+}
+
+@mixin animation-delay($animation-delay) {
+  -webkit-transition-delay: #{$animation-delay};
+  -moz-transition-delay: #{$animation-delay};
+  -o-transition-delay: #{$animation-delay};
+  transition-delay: #{$animation-delay};
+}
+
+@mixin keyframes($keyframes) {
+  @-webkit-keyframes #{$keyframes} {
+    @content;
+  }
+  @-moz-keyframes #{$keyframes} {
+    @content;
+  }
+  @-o-keyframes #{$keyframes} {
+    @content;
+  }
+  @keyframes #{$keyframes} {
+    @content;
+  }
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: #{$transition};
+  -moz-transition: #{$transition};
+  -o-transition: #{$transition};
+  transition: #{$transition};
+}
+
+@mixin transition-delay($transition-delay) {
+  -webkit-transition-delay: #{$transition-delay};
+  -moz-transition-delay: #{$transition-delay};
+  -o-transition-delay: #{$transition-delay};
+  transition-delay: #{$transition-delay};
+}
+
+@mixin ffcondensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  color: #201d1d;
+}
+
+/*  Wrapper
+===================================== */
+body {
+  font-family: $font-stack;
+  background: url(../img/sakura.gif) 0 0 / cover no-repeat;
+}
+.wrapper {
+}
+.wrapper__block {
+  position: relative;
+}
+.container {
+  padding: 15px;
+}
+.block__time {
+  position: absolute;
+  right: 30px;
+  top: 210px;
+}
+.time__item {
+  background-color: rgba(227, 227, 227, 0.3);
+  border-radius: 5px;
+  width: 150px;
+  p {
+    opacity: 0.9;
+    padding: 20px 15px;
+    color: #edebeb;
+    font-size: 43px;
+    text-shadow: 2px -1px 1px #b269e6;
+  }
+}

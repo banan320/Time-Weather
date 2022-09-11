@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+/*  MIXINS
+========================================= */
+/*  Wrapper
+===================================== */
+body {
+  font-family: "Satisfy", cursive;
+  background: url(../img/sakura.gif) 0 0/cover no-repeat;
+}
+
+.wrapper__block {
+  position: relative;
+}
+
+.container {
+  padding: 15px;
+}
+
+.block__time {
+  position: absolute;
+  right: 30px;
+  top: 210px;
+}
+
+.time__item {
+  background-color: rgba(227, 227, 227, 0.3);
+  border-radius: 5px;
+  width: 150px;
+}
+
+.time__item p {
+  opacity: 0.9;
+  padding: 20px 15px;
+  color: #edebeb;
+  font-size: 43px;
+  text-shadow: 2px -1px 1px #b269e6;
+}
