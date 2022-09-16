@@ -5,7 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Time</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon_io/favicon-16x16.png"
+    />
+
+    <title>Time, weather and relax.</title>
   </head>
   <body>
     <div class="wrapper">
@@ -16,11 +34,35 @@
             <div class="time__item">
               <p id="p2" class="item__clock"></p>
             </div>
+            <div class="block__weather">
+              <div
+                id="iddf686b648a9af"
+                a='{"t":"v","v":"1.2","lang":"ru","locs":[466],"ssot":"c","sics":"ms","cbkg":"rgba(175,175,175,0.17500000000000004)","cfnt":"rgba(237,237,237,1)","cprb":"rgba(227,227,227,0.30196078431372547)","cprf":"rgba(237,237,237,1)","slfs":20,"slbr":3,"slmw":225,"ent":"bool","sfnt":"a"}'
+              >
+                Источник данных о погоде:
+                <a href="https://meteolabs.ru/погода_краснодар/"
+                  >https://meteolabs.ru</a
+                >
+              </div>
+            </div>
+            <div class="block__music">
+              <div class="time__video">
+                <iframe
+                  src="//iframely.net/AetwmZo?click_to_play=1&playerjs=1"
+                  allowfullscreen
+                  scrolling="no"
+                  allow="autoplay *; accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *;"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
+    <script
+      async
+      src="https://static1.meteolabs.ru/widgetjs/?id=iddf686b648a9af"
+    ></script>
     <script src="./main.js"></script>
   </body>
 </html>

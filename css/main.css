@@ -96,7 +96,8 @@ h6 {
 ===================================== */
 body {
   font-family: "Satisfy", cursive;
-  background: url(../img/sakura.gif) 0 0/cover no-repeat;
+  background: url(../img/sakura.gif) 0 0/cover no-repeat fixed;
+  max-width: 100%;
 }
 
 .wrapper__block {
@@ -111,18 +112,55 @@ body {
   position: absolute;
   right: 30px;
   top: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
 }
 
 .time__item {
-  background-color: rgba(227, 227, 227, 0.3);
-  border-radius: 5px;
-  width: 150px;
+  background-color: #e3e3e34d;
+  border-radius: 3px;
+  width: 165px;
+  margin-bottom: 20px;
+  border: 1px solid #939393;
+  text-align: center;
 }
 
 .time__item p {
   opacity: 0.9;
-  padding: 20px 15px;
+  padding: 20px 17px 15px 15px;
   color: #edebeb;
   font-size: 43px;
   text-shadow: 2px -1px 1px #b269e6;
+  letter-spacing: 2px;
+}
+
+.block__weather {
+  margin-bottom: 20px;
+}
+
+.time__video {
+  left: 0;
+  width: 200px;
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.time__video iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0;
+  border-radius: 3px;
 }
